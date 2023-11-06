@@ -1,0 +1,36 @@
+.spotify{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    .upper{
+        display: flex;
+        height: 90vh;
+        background: rgb(0,0,0);
+        background: linear-gradient(0deg, rgba(0,0,0,1) 6%, rgba(60,214,245,1) 100%);
+        .left{
+            flex: 2;
+            background-color: #000000;
+            
+        }
+        .right{
+            flex: 8;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+            overflow: auto;
+            &::-webkit-scrollbar {
+              width: 0.7rem;
+              max-height: 2rem;
+              &-thumb {
+                background-color: rgba(255, 255, 255, 0.6);
+              }
+            }
+        }
+    }
+    .lower{
+        height: 10vh;
+        background-color: #191414;
+    }
+}

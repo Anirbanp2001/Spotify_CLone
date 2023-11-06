@@ -1,0 +1,41 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35%;
+    top:0;
+    padding: 20px;
+    position: sticky;
+    .searchBar{
+        display: flex;
+        align-items: center;
+        background-color: white;
+        padding: 10px;
+        border-radius: 20px;
+        width: 45%;
+        input{
+            width: 100%;
+            border: none;
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+    .user{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px 10px;
+        background-color: rgb(0, 0, 0);
+        color: white;
+        border-radius: 30px;
+        gap: 2px;
+        CgProfile{
+            background-color: rgb(32, 32, 32);
+        }
+
+    }
+}
+.temp{
+    background-color: #000000dc;
+}
